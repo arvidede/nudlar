@@ -21,6 +21,7 @@ window.onload = () => {
         }
     }
 
-
     renderStars()
+
+    const context = new AudioContext()
 }
