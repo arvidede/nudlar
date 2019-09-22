@@ -26,8 +26,8 @@ window.onload = () => {
         /Chrome/.test(navigator.userAgent) &&
         /Google Inc/.test(navigator.vendor)
 
-    const node = document.querySelector(
-        isChrome ? '#playAudio' : '#iframeAudio'
-    )
+    const node = document.querySelector(isChrome ? '#playAudio' : '#iframeAudio')
     node.remove()
+
+    document.body.click()
 }
