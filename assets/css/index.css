@@ -89,7 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  animation: logo 9s ease-out 9s;
+  animation: logo 9s ease-out 8s;
   opacity: 0;
   font-family: StarWars;
   text-align: center;
@@ -162,7 +162,7 @@ p, .logo {
 }
 
 #content {
-  animation: scroll 100s linear 16s;
+  animation: scroll 100s linear 15s;
   position: absolute;
   top: 100%;
 }

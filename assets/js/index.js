@@ -23,8 +23,11 @@ function renderStars() {
 toggleContent = () => {
     renderStars()
 
-    const node = document.getElementById("start-button");
+    const node = document.getElementById("start-button")
     node.className = 'active'
+
+    const audio = document.getElementById("audio")
+    audio.play()
 
     if (node.parentNode) {
         setTimeout(() => {
