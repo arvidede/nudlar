@@ -1,11 +1,11 @@
 @font-face {
   font-family: StarWars;
-  src: url(../fonts/Starjedi.ttf)
+  src: url(/Starjedi.5aa25c8a.ttf)
 }
 
 @font-face {
   font-family: StarWarsTitle;
-  src: url(../fonts/SWCrawlTitle2.ttf)
+  src: url(/SWCrawlTitle2.41d50ebc.ttf)
 }
 
 body {
@@ -183,3 +183,6 @@ p, .logo {
     top: -170%;
   }
 }
+
+
+/*# sourceMappingURL=/css.5ec3a257.css.map */
