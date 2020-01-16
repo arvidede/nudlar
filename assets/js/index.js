@@ -1,3 +1,11 @@
+const isSafari = (navigator.userAgent.indexOf('Safari') > -1 || (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream))
+
+
+if(isSafari) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext
+    const audioCtx = new AudioContext()
+}
+
 function renderStars() {
     function getRandomPosition() {
         const y = window.innerWidth
@@ -27,6 +35,13 @@ toggleContent = () => {
     node.className = 'active'
 
     const audio = document.getElementById("audio")
+
+    audio.oncanplay = function() {
+        if(isSafari) {
+            audio.currentTime = 2
+        }
+    }
+
     audio.play()
 
     if (node.parentNode) {

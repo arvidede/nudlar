@@ -13,15 +13,16 @@ body {
   background-color: #000;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
 }
 
 #start-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   transition: opacity 0.5s;
   opacity: 1;
 }
@@ -68,16 +69,16 @@ body {
 }
 
 .intro {
-  position: absolute;
+  /*position: absolute;*/
   animation: intro 6s ease-out 1s;
   color: rgb(75, 213, 238);
   font-weight: 400;
   font-size: 2rem;
   opacity: 0;
-  top: 50%;
-  left: 50%;
+  /*top: 50%;*/
+  /*left: 50%;*/
   margin: auto;
-  transform: translate(-50%);
+  /*transform: translate(-50%);*/
 }
 
 .logo {
@@ -127,7 +128,6 @@ body {
     display: none;
   }
 }
-
 
 p, .logo {
   color: #FFFF82;
@@ -183,3 +183,24 @@ p, .logo {
     top: -170%;
   }
 }
+
+@media screen and (max-width: 980px) {
+  body {
+    height: 85vh;
+  }
+
+  #start-button button {
+    font-size: 3rem;
+  }
+
+  #intro {
+    width: 100vw;
+    font-size: 3rem;
+  }
+
+  #board {
+    width: 100vw;
+    transform: perspective(400px) rotateX(10deg);
+  }
+}
+
